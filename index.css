@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(83, 80, 80);
+}
+p{
+    margin: 0px;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.editorcontainer{
+    background-color: rgb(217, 224, 224);
+    height: 24.26550598476605vh;
+    width: 11.5625vw;
+    min-width: 150px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction:column ;
+}
+.upperdiv{
+    flex:1;
+}
+.BUTT_ON{
+    width: auto;
+    height:70px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.butt{
+    border: none;
+    background-color: rgb(42, 124, 201);
+    width: 11.58vw;
+    height: 3.59086vh;
+    border-radius: 0px 0px 12px 12px;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    min-width: 150px;
+    flex:1;
+}
+.butt:hover{
+    background-color: rgb(12, 60, 109);
+    color: white;
+}
+.Tatti_butt{
+    flex: 1;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: medium;
+    padding-left: 6px ;
+}
+.tatti_title{
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .maincontainer{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        justify-content: unset;
+        row-gap: 14px;
+        margin-left: 13px ;
+        margin-left: 13px ;
+    }
+    .editorcontainer{
+        background-color: rgb(217, 224, 224);
+        height:31vh;
+        width: 43vw;
+        min-width: 150px;
+        border-radius: 13px;
+        display: flex;
+        flex-direction:column ;
+    }
+    .butt{
+        width: 43vw;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1260px) {
+    .maincontainer{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        row-gap: 14px;
+    }
+    .editorcontainer{
+        background-color: rgb(217, 224, 224);
+        height:31vh;
+        width: 30vw;
+        min-width: 150px;
+        border-radius: 13px;
+        display: flex;
+        flex-direction:column ;
+    }
+    .butt{
+        width: 30vw;
+    }
+}
